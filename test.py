@@ -40,6 +40,7 @@ def predict(dataset_validation):
 		lable_validation.append(data[1])
 
 	count = 0
+	#last 1000 images were used as surplus training data
 	image_validation = image_validation[:1000]
 	lable_validation = lable_validation[:1000]
 	image_size=100
