@@ -23,4 +23,4 @@ a basic image classifier using convolutional neural network to differentiate bet
 - clone this repo
 - save image you want to calssify in the cloned folder (only jpg image)
 - run predict.py and enter the full name of image
-- accuracy of the model is 84% thus prediction may be wrong so try with a different image in that case
+- accuracy of the model is 83% thus prediction may be wrong so try with a different image in that case
