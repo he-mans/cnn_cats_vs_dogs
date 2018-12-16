@@ -46,10 +46,9 @@ def predict(dataset_validation):
 	image_validation = np.array(image_validation).reshape(len(image_validation),image_size,image_size,1)/255.0
 
 	model = keras.models.load_model('dogs_vs_cats.model')
-	predictions = list(np.round(model.predict(image_validation),0))
-	
 	loss,accuracy = model.evaluate(image_validation,lable_validation,batch_size=30)
 	print(f"loss : {loss}\naccuracy : {accuracy}")
+
 if __name__ == '__main__':
 	dataset_validation=[]
 	get_validation_data(dataset_validation)
