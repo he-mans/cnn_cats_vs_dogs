@@ -19,7 +19,7 @@ a basic image classifier using convolutional neural network to differentiate bet
 - validation accuracy: .8344 (83%)
 - validation loss: .3912
 
-##how to run
+## how to run
 - clone this repo
 - save image you want to calssify in the cloned folder (only jpg image)
 - run predict.py and enter the full name of image
