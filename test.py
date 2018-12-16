@@ -46,6 +46,7 @@ def predict(dataset_validation):
 	model = keras.models.load_model('dogs_vs_cats.model')
 	predictions = list(np.round(model.predict(image_validation),0))
 	
+	
 	for prediction,label in zip(predictions,lable_validation):
 		if (int(prediction)==label):
 			count+=1
