@@ -12,7 +12,7 @@ a basic image classifier using convolutional neural network to differentiate bet
 - output layer
 
 ## training info
-- dataset link: [kaggle_dogs_vs_cats](https://www.kaggle.com/c/dogs-vs-cats/data)
+- dataset link: [kaggle_dogs_vs_cats](https://www.kaggle.com/chetankv/dogs-cats-images#dog%20vs%20cat.zip)
 - training dataset: 9000 images (4500 each)
 - testing dataset: 1000 images(500 each)
 - epochs: 4
