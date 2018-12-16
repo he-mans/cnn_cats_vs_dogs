@@ -40,19 +40,16 @@ def predict(dataset_validation):
 		lable_validation.append(data[1])
 
 	count = 0
+	image_validation = image_validation[:1000]
+	lable_validation = lable_validation[:1000]
 	image_size=100
 	image_validation = np.array(image_validation).reshape(len(image_validation),image_size,image_size,1)/255.0
 
 	model = keras.models.load_model('dogs_vs_cats.model')
 	predictions = list(np.round(model.predict(image_validation),0))
 	
-	
-	for prediction,label in zip(predictions,lable_validation):
-		if (int(prediction)==label):
-			count+=1
-	
-	print(count/len(lable_validation))
-
+	loss,accuracy = model.evaluate(image_validation,lable_validation,batch_size=30)
+	print(f"loss : {loss}\naccuracy : {accuracy}")
 if __name__ == '__main__':
 	dataset_validation=[]
 	get_validation_data(dataset_validation)
